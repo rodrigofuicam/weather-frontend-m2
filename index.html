@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <!-- NAVEGACIÓN -->
-    <nav class="navbar navbar-expand-lg">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">🌈ClimaSur</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -34,35 +34,46 @@
             </div>
         </div>
     </nav>
-    <!-- TÍTULOS + IMAGEN HERO-->
+
+    <!-- HEADER-->
     <header>
-        <article id="home" class="text-center">
-            <div class="mt-2 mb-2">
-                <h1 class="display-1">¡Bienvenido a Clima Sur!</h1>
+        <!-- TÍTULOS-->
+        <section id="home" class="title">
+            <div class="title__main">
+                <h1>¡Bienvenido a Clima Sur!</h1>
             </div>
-            <div class="mb-2">
-                <h2 class="fs-3">Un sitio especializado en el desarrollo de la ciencia meteorológica en el sur del país
+            <div class="title__sub">
+                <h2>Un sitio especializado en el desarrollo de la ciencia meteorológica en el sur del país
                 </h2>
             </div>
-        </article>
+        </section>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <img src="./assets/img/volcan_osorno.jpg" class="hero__image" alt="Volcán Osorno">
+        </section>
+
     </header>
-    <div class="mt-2 mb-2"> <img src="./assets/img/volcan_osorno.jpg" class="img-fluid w-100 d-block"
-            alt="Volcán Osorno"></div>
 
 
     <!-- CIUDADES -->
-    <div class="mt-4 mb-4">
-        <h2 class="text-center mt-2 mb-2">Ciudades</h2>
-    </div>
+    <section class="cities" id="cities">
 
-    <main id="cities">
-        <section class="row" id="cities__container">
-        </section>
-    </main>
+        <div class="cities__title">
+            <h2 class="text-center mt-2 mb-2">Ciudades</h2>
+        </div>
+
+        <div id="cities__cards">
+            <section class="row" id="cities__container">
+            </section>
+        </div>
+
+    </section>
+
 
 
     <!-- ACERCA DE -->
-    <section class="mt-5 p-3  fw-bold" id="about">
+    <section class="about" id="about">
         <p>Gracias por visitar nuestra plataforma, un espacio donde encontrarás toda la información del clima del sur de
             Chile de manera clara, rápida y confiable. Aquí te entregamos pronósticos actualizados, datos en tiempo
             real y contenido fácil de entender para que puedas planificar tu día sin sorpresas. Nuestro objetivo es
@@ -70,8 +81,8 @@
             hasta esos raros días soleados. ¡Explora, infórmate y mantente siempre un paso adelante del clima!</p>
     </section>
     <!-- INFO BÁSICA DEL PROYECTO -->
-    <footer class="text-center p-3">
-        <p id="foot"> Este proyecto tiene fines exclusivamente educacionales y corresponde al desarrollo completo e
+    <footer class=footer>
+        <p id="footer"> Este proyecto tiene fines exclusivamente educacionales y corresponde al desarrollo completo e
             integral de
             herramientas basadas en HTML, CSS y JavaScript. <br> 2025 Zcarabajo Studio. Todos los derechos reservados.
             Contacto: rodrigo.fuicam@gmail.com <br>Sígueme en Instagram como @zcarabajo_studio</p>

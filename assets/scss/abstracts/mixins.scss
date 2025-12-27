@@ -1,0 +1,6 @@
+@use 'variables' as *;
+
+@mixin whiteTitle
+{
+color: $blanco;
+font-family: $fuenteTitulos;}

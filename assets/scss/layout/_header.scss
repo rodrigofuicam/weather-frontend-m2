@@ -1,0 +1,60 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+
+
+.header {
+    padding-top: 1rem;
+    background-color: $secundario;
+
+
+    &__title {
+        margin: 1rem;
+
+        text-align: center;
+        font-size: 7rem;
+  @include whiteTitle;
+    }
+
+    &__subtitle {
+ 
+        text-align: center;
+        font-size: 3rem;
+    @include whiteTitle;
+    }
+
+    &__nav {
+
+        font-size: 2rem;
+  @include whiteTitle;
+  
+    }
+
+    &__list {
+        margin: 0;
+        padding: 1rem;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 10rem;
+        margin-top: $separacion;
+        background-color: $terciario;
+@media (max-width:$smartphone){
+
+    gap:1rem;
+}
+        
+    }
+
+    &__listItem {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    &__cover {
+
+width: 100%;
+
+    }
+
+}

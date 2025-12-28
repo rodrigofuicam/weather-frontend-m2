@@ -1,17 +1,17 @@
-@use '../abstracts/variables' as *;
-.cities{
-    margin-top: 3rem;
-margin-bottom: 6rem;
-&__title{
-
-font-family: $fuentePrincipal;
-margin-bottom: 3rem;
-}
-&__title-main{
-    font-size: 3.5rem;
+@use "../abstracts/variables" as *;
+.cities {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  &__title {
+    font-family: $fuentePrincipal;
+  }
+  &__title-main {
+    font-size: 2.5rem;
     font-weight: bold;
     color: $negro;
-}
-&__cards{
-}
+    &__container{
+margin-left: 0;
+margin-right:0 ;
+    }
+  }
 }

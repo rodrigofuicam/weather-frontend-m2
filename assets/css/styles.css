@@ -311,6 +311,7 @@ template {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 body {
@@ -324,6 +325,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 .header__hero {
   width: 100%;
@@ -336,28 +338,42 @@ body {
   object-fit: cover;
 }
 .header__title {
+  max-width: 100%;
   position: absolute;
   color: #ffffff;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
 }
 .header__title_main {
   font-family: "Georgia", sans-serif;
 }
 .header__title_main-welcome {
-  padding: 0;
-  font-size: 5rem;
-  margin-top: 1rem;
+  font-size: 4.5rem;
+  white-space: nowrap;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
 }
 .header__title_sub {
   font-family: "Calibri", sans-serif;
   font-style: italic;
 }
 .header__title_subtitle {
-  padding: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   white-space: nowrap;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
 }
 
+@media (max-width: 420px) {
+  .header__title_main-welcome {
+    font-size: 1.75rem;
+  }
+  .header__title_subtitle {
+    font-size: 0.5rem;
+  }
+}
 .footer {
   background-color: rgb(28, 89, 182);
   color: #ffffff;
@@ -375,18 +391,22 @@ body {
 }
 
 .cities {
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 6rem;
 }
 .cities__title {
   font-family: "Georgia", sans-serif;
-  margin-bottom: 3rem;
 }
 .cities__title-main {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #000;
 }
+.cities__title-main__container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .navbar {
   font-family: "Calibri", sans-serif;
   background-color: rgb(28, 89, 182);

@@ -1,2 +1,8 @@
-@use 'variables' as *;
+@use "variables" as *;
 
+@mixin linear-text {
+  white-space: nowrap;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+}

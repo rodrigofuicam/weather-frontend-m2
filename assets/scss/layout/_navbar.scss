@@ -1,0 +1,12 @@
+@use '../abstracts/variables.scss' as *;
+.navbar{
+    font-family: $fuenteSecundaria;
+    background-color: $azul;
+    
+    &-brand{
+        color: $blanco;
+    }
+}
+.nav-link{
+color: $blanco;
+}

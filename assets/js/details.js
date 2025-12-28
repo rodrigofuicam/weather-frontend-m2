@@ -30,13 +30,11 @@ const weekly = [
 
 const city = cities.find(c => c.id === cityId);
 
-// Mostrar datos actuales
 document.getElementById("cityName").textContent = city.name;
 document.getElementById("temp").textContent = `${city.temp}°C`;
 document.getElementById("humidity").textContent = `${city.humedad}%`;
 document.getElementById("wind").textContent = `${city.viento} km/h`;
 
-// Render semanal
 const weeklyContainer = document.getElementById("weeklyContainer");
 
 weekly.forEach(day => {

@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as *;
+
+.footer{
+background-color: $azul;
+color: $blanco;
+text-align: center;
+&__about{
+font-size: 1.5rem;
+font-family: $fuentePrincipal;
+padding: 2rem;
+}
+&__info{
+font-family: $fuenteSecundaria;
+font-size: 0.75rem;
+padding: 1rem;
+}
+}

@@ -1,60 +1,52 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
-
-
+@use '../abstracts/variables.scss' as *;
 
 .header {
-    padding-top: 1rem;
-    background-color: $secundario;
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  &__hero {
+   
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  &__hero-image {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 
-    &__title {
-        margin: 1rem;
+  &__title {
+    position: absolute;
+    color: $blanco;
+    text-shadow: 0 2px 6px rgba(0,0,0,.6);
 
-        text-align: center;
-        font-size: 7rem;
-  @include whiteTitle;
-    }
-
-    &__subtitle {
- 
-        text-align: center;
-        font-size: 3rem;
-    @include whiteTitle;
-    }
-
-    &__nav {
-
-        font-size: 2rem;
-  @include whiteTitle;
-  
-    }
-
-    &__list {
-        margin: 0;
-        padding: 1rem;
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        gap: 10rem;
-        margin-top: $separacion;
-        background-color: $terciario;
-@media (max-width:$smartphone){
-
-    gap:1rem;
+  }
+  &__title_main {
+    font-family: $fuentePrincipal;
+  }
+&__title_main-welcome{
+padding: 0;
+font-size: 5rem;
+margin-top: 1rem;
+   
 }
-        
-    }
+  &__title_sub {
+    font-family: $fuenteSecundaria;
+    font-style: italic;
+  }
+  &__title_subtitle{
+padding: 0;
+font-size: 2rem;
+  white-space: nowrap;
 
-    &__listItem {
-        text-align: center;
-        font-size: 2rem;
-    }
 
-    &__cover {
-
-width: 100%;
-
-    }
-
+}
 }

@@ -17,10 +17,10 @@ let html = document.getElementById("cities__container")
 let template = ""
 for (let i = 0; i < cities.length; i++) {
     template += `
-    <div class="col-md-4">
+    <div class="col-md-4 g-5">
         <div class="card" onclick="goDetail(${cities[i].id})" style="cursor:pointer"
 >
-        <div class="card-header">${cities[i].name}</div>
+        <div class="card-header bg-info fw-bold">${cities[i].name}</div>
 
             <div class="card-body">
     
